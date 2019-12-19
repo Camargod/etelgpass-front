@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .header
 {
   background-color: rgb(57,57,57);
@@ -13,8 +15,45 @@
     font-family: 'Bree Serif', serif;
     font-size: 22px;
     color:#2de55f;
-    margin-top: -4px;
     padding-left: 10px;
+    flex: 1;
+  }
+  .sections
+  {
+    flex: 1;
+    line-height: 2;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4px;
+    font-family: 'Roboto', monospace;
+    .item
+    {
+      padding-left: 25px;
+      padding-right: 25px;
+      color: white;
+      &:hover
+      {
+        text-shadow: 2px 2px black;
+        cursor:pointer;
+      }
+    }
+    .item-selected
+    {
+      padding-left: 18px;
+      padding-top: 0px;
+      padding-right: 18px;
+      background-color: #2de55f;
+      border-radius: 14px;
+      transition-duration: 0.4s;
+      -webkit-transition-duration: 0.4s;
+      box-shadow: 3px 2px 8px black;
+    }
+  }
+
+  .right-side
+  {
+    flex: 1;
   }
 }
 .content
