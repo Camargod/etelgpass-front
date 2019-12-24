@@ -1,0 +1,34 @@
+.background
+{
+  background-color: #6AFF5E;
+  width: 100%;
+  height: 100%;
+  margin-top: 48px;
+  padding: 20px;
+  margin-left: -8px;
+
+}
+.welcome
+{
+    font-size: 3.4rem;
+    // position: absolute;
+    // top: 10.5rem;
+    // left: 10%;
+    opacity: 0;
+    // color: #F0A3BE;
+    animation: fadeInOut 3.5 normal forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    animation-duration: 5.5s; 
+}
+
+@keyframes fadeInOut 
+{
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
