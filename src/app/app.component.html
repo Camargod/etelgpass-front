@@ -1,11 +1,17 @@
 <div class="header">
   <div class="title">EtelgPass</div>
-  <div class="sections">
-    <div [class.item-selected]="UIParams.selectedHeaderItem == 'home'" class="item-selected"> Home </div>
-    <div [class.item-selected]="UIParams.selectedHeaderItem == 'notas'" class="item"> Notas </div>
-    <div [class.item-selected]="UIParams.selectedHeaderItem == 'faltas'" class="item"> Faltas </div>
+
+  <div id="menu" class="sections-menu">
+    <div data-menuanchor="Home" [class.item-selected]="headerSelectedSection == 0" class="item" (click)="expression"><a href="#Home"> Home </a></div>
+    <div data-menuanchor="Notas" [class.item-selected]="headerSelectedSection == 1" class="item"> <a href="#Notas"> Notas </a> </div>
+    <div data-menuanchor="Faltas" [class.item-selected]="headerSelectedSection == 2" class="item"> <a href="#Faltas"> Faltas </a></div>
   </div>
+
   <div class="right-side"></div>
 </div>
-
-<router-outlet></router-outlet>
+  
+<div fullpage id="fullpage2" [options]="config" (ref)="getRef($event)" class="full-page">
+  <div class="section"><home-page></home-page></div>
+  <div class="section"><h1>Section 2</h1></div>
+  <div class="section"><h1>Section 3</h1></div>
+</div>

@@ -24,6 +24,7 @@
     "@angular/pwa": "^0.803.20",
     "@angular/router": "~8.2.14",
     "@angular/service-worker": "~8.2.14",
+    "@fullpage/angular-fullpage": "0.0.14",
     "http-server": "^0.12.0",
     "primeicons": "^2.0.0",
     "primeng": "^9.0.0-rc.2",

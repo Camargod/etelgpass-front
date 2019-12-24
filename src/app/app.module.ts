@@ -8,6 +8,9 @@ import { HomePageComponent } from './modules/home-page/home-page.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +20,7 @@ import { environment } from '../environments/environment';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    AngularFullpageModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
