@@ -33,6 +33,8 @@
   padding-right: 25px;
   color: white;
   border-radius: 8px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
   text-decoration: none !important;
 }
 .header .sections-menu .item:hover {

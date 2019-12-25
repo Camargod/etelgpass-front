@@ -36,6 +36,8 @@
       padding-right: 25px;
       color: white;
       border-radius: 8px;
+      transition-duration: 0.5s;
+      -webkit-transition-duration: 0.5s;
       &:hover
       {
         text-shadow: 2px 2px black;

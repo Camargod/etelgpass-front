@@ -10,20 +10,25 @@ import { environment } from '../environments/environment';
 
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
+import { CookieService } from 'ngx-cookie-service';
+import { LoginPageComponent } from './modules/login-page/login-page.component'
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFullpageModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent,HomePageComponent]
 })
 export class AppModule { }
