@@ -44,9 +44,10 @@
   flex-direction: row;
 }
 .login-page .login-area .login-form {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 8px;
+  align-items: flex-start;
+  padding: 30px;
   flex: 1;
 }
 .login-page .login-area .image {

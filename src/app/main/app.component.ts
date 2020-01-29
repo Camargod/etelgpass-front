@@ -12,7 +12,7 @@ export class AppComponent implements OnInit, AfterViewInit
   config;
   fullpage_api;
   title = 'EtelgPass';
-  isLogged : boolean = false;
+  isLogged : boolean = true;
   constructor(private cookieService : CookieService) 
   {
     // for more details on config options please visit fullPage.js docs

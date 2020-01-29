@@ -3,9 +3,6 @@
 .header {
   background-color: #393939;
   padding: 10px;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-top: -8px;
   display: flex;
   flex-direction: row;
   position: fixed;

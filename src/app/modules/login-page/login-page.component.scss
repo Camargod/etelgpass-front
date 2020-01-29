@@ -47,9 +47,10 @@
         flex-direction: row;
         .login-form
         {
+            display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 8px;
+            align-items: flex-start;
+            padding: 30px;
             flex: 1;
         }
         .image

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
+  public isNSA : boolean = false;
   constructor() { }
 
   ngOnInit() 
